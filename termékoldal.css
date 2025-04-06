@@ -1,0 +1,195 @@
+.akcios-sav {
+    background-color: #ced4da; 
+    color: #252422; 
+    overflow: hidden; 
+    padding: 10px 0;
+    white-space: nowrap; /* Megakadályozza, hogy a szöveg több sorba törjön */
+    position: relative;
+    font-size: 16px;
+  }
+  
+  .akcios-szoveg {
+    display: inline-block; 
+    padding-left: 100%; 
+    animation: akcioMozgas 20s linear infinite; 
+  }
+  
+  .akcios-szoveg span {
+    margin-right: 50px; 
+  }
+  
+  @keyframes akcioMozgas {
+  0% {
+      transform: translateX(0); /* Kezdeti pozíció */
+  }
+  100% {
+      transform: translateX(-100%); /* Vége, amikor a szöveg eltűnik */
+  }
+  }
+
+/* Alapstílusok */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+ 
+  /* Fejléc */
+  .header {
+    background-color: #6c757d;
+    height: 100px;
+
+  }
+  .logo{
+    font-size: 30px;
+    margin-left: 55px;
+  }
+  .logo:hover{
+    filter: blur(0.5px);
+    transition: 0.3s ease;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav ul li {
+    display: inline-block;
+  }
+  
+  .nav ul li a img {
+    width: 20px;
+  }
+  a:hover{
+    filter: blur(0.5px);
+    transition: 0.3s ease;
+  }
+ 
+
+ 
+/* Termék szekció */
+.product-section {
+    background-color: #FFFCF2;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-container {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .product-image img {
+    width: 300px;
+    height: auto;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.445), 
+                inset -5px -5px rgba(0, 0, 0, 0.438);
+  }
+  .product-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #EB5E28;
+    font-weight: bold;  
+  }
+  
+  .add-to-cart-btn {
+    background-color: #4a403a;
+    color: #EB5E28;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #3b322e;
+  }
+  
+
+/* Kategóriák szekció */
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.category-item {
+  background-color: #fdfbec;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+}
+
+.category-item img {
+  width: 100%;
+  max-width: 200px;
+}
+
+
+/* Lábléc */
+.footer {
+    background-color: #d9d0c6;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex-basis: 45%;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-bottom img {
+    width: 50px;
+    margin-right: 10px;
+  }
